@@ -1,7 +1,18 @@
 {
   "name": "homepage",
+  "description": "This repository contains a webpage, that describes me, my skills and hobbies :)",
   "version": "0.1.0",
   "type": "commonjs",
+  "author": {
+    "name": "Michał Warchoł",
+    "email": "hireme@michalwarchol.com",
+    "url": "https://michalwarchol.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/michalwarchol/homepage.git"
+  },
+  "keywords": ["webdevelopment", "frontend", "learning"],
   "private": true,
   "scripts": {
     "dev": "next dev",
