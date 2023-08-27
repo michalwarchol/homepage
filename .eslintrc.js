@@ -26,7 +26,9 @@ module.exports = {
     'react/react-in-jsx-scope': 'off',
     'react/prop-types': 'off',
     '@typescript-eslint/explicit-function-return-type': 'off',
-    '@typescript-eslint/no-unused-vars': ['error'],
+    '@typescript-eslint/no-unused-vars': 'error',
+    'no-unused-vars': 'off',
+    'import/no-unresolved': 'off',
     'jsx-a11y/anchor-is-valid': [
       'error',
       {
@@ -55,10 +57,9 @@ module.exports = {
     react: {
       version: 'detect',
     },
-    import: {
-      resolver: {
-        typescript: true,
-        node: true,
+    'import/resolver': {
+      node: {
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
       },
     },
   },

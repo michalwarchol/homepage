@@ -1,11 +1,62 @@
+@import "./_variables.scss";
+
 html,
 body {
   max-width: 100vw;
   padding: 0;
   margin: 0;
+
+  background-image: none;
+  background-color: $backgroundDark;
+  @media screen and (min-width: 1280px) {
+    background-image: linear-gradient(
+      to right,
+      $backgroundDark,
+      $backgroundDark,
+      $text
+    );
+  }
 }
 
 a {
   color: inherit;
   text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
+  color: $text;
+}
+
+h1 {
+  font-size: 48px;
+  @media screen and (min-width: 1280px) {
+    font-size: 72px;
+  }
+}
+
+h2 {
+  font-size: 32px;
+  @media screen and (min-width: 1280px) {
+    font-size: 48px;
+  }
+}
+
+h3 {
+  font-size: 24px;
+  @media screen and (min-width: 1280px) {
+    font-size: 32px;
+  }
+}
+
+h4 {
+  font-size: 16px;
+  @media screen and (min-width: 1280px) {
+    font-size: 24px;
+  }
 }
